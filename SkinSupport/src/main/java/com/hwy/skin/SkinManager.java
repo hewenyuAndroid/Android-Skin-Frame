@@ -152,7 +152,7 @@ public class SkinManager {
      * @param skinPath
      * @return
      */
-    private int checkSkinFileValid(String skinPath) throws RuntimeException {
+    private int checkSkinFileValid(String skinPath) {
         // 判断皮肤文件是否存在
         File skinFile = new File(skinPath);
         if (!skinFile.exists()) {

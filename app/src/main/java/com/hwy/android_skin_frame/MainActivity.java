@@ -54,7 +54,8 @@ public class MainActivity extends SkinActivity {
                 String currSkinPath = SkinUtil.getInstance(MainActivity.this).getSkinPath();
                 if (TextUtils.isEmpty(currSkinPath)) {
                     SkinManager.getInstance().loadSkin(Environment.getExternalStorageDirectory().getAbsolutePath()
-                            + File.separator + "Download" + File.separator + "target.skin");
+//                            + File.separator + "Download" + File.separator + "target.skin");
+                            + File.separator + "target.skin");
                 } else {
                     SkinManager.getInstance().restoreSkin();
                 }
