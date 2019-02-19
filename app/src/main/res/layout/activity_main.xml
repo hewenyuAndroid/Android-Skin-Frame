@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@color/button_bg"
+        android:onClick="exchangeSkin"
+        android:text="换肤"
+        android:textColor="@color/main_color" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@color/button_bg"
+        android:onClick="startNextPage"
+        android:text="跳转到下一页"
+        android:textColor="@color/main_color" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:src="@mipmap/message" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/icon" />
+
+    <com.hwy.android_skin_frame.widget.MyView
+        android:id="@+id/my_view"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_margin="6dp"
+        android:background="#FFFFFF"
+        app:customColor="@color/main_color"
+        app:customSize="16sp" />
+
+</LinearLayout>
